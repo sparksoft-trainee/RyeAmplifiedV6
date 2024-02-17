@@ -12,12 +12,13 @@ import { generateClient } from 'aws-amplify/api';
 import { createTodo } from './graphql/mutations';
 import { listTodos } from './graphql/queries';
 
+import Crud from './crud/CRUD';
+
 const initialState = { name: '', description: '' };
 const client = generateClient();
 
 
-
-function App({ signOut, user }) {
+export function App({ signOut }) {
 
   const [formState, setFormState] = useState(initialState);
   const [todos, setTodos] = useState([]);
@@ -88,9 +89,12 @@ function App({ signOut, user }) {
         </div>
       ))}
     </div>
+    <div>
+      <Crud />
+    </div>
     </>
   );
-};
+}
 
 const styles = {
   container: {
@@ -120,4 +124,5 @@ const styles = {
   }
 };
 
-export default withAuthenticator(App);
+const AppWithAuthenticator = withAuthenticator(App);
+export default AppWithAuthenticator;
