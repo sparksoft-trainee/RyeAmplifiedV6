@@ -1,0 +1,14 @@
+{
+  "resourceName": "ryestorage",
+  "policyUUID": "fea61333",
+  "bucketName": "ryebucket",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

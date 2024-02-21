@@ -25,18 +25,14 @@
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
-    "userpoolClientWriteAttributes": [
-      "email"
-    ],
-    "userpoolClientReadAttributes": [
-      "email"
-    ],
+    "userpoolClientWriteAttributes": [],
+    "userpoolClientReadAttributes": [],
     "userpoolClientLambdaRole": "ryeampc94e9db2_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
     "sharedId": "c94e9db2",
     "resourceName": "ryeamplifiedv6c94e9db2",
     "authSelections": "identityPoolAndUserPool",
-    "useDefault": "defaultSocial",
+    "useDefault": "manual",
     "usernameAttributes": [
       "email"
     ],
@@ -64,7 +60,10 @@
       "Google"
     ],
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:5173/\"],\"LogoutURLs\":[\"http://localhost:5173/\"]}",
-    "authProviders": []
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:5173/\",\"https://dev.d2l0wtnnm8bk8f.amplifyapp.com/\"],\"LogoutURLs\":[\"http://localhost:5173/\",\"https://dev.d2l0wtnnm8bk8f.amplifyapp.com/\"]}",
+    "authProviders": [],
+    "userPoolGroups": false,
+    "adminQueries": false,
+    "thirdPartyAuth": false
   }
 }
