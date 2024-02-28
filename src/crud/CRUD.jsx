@@ -45,6 +45,8 @@ function Crud() {
         display: 'inline-block',
         flexDirection: 'column',
         justifyContent: 'center',
+        marginLeft: '45em',
+        marginTop: '5em',
         }}>
         <input
           onChange={event => setInput('name', event.target.value)}
